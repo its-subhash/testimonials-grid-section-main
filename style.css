@@ -22,26 +22,28 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: var(--clr-ntrl-blue);
 }
-@media (min-width:800px) {
-    .wrapper{
-        width: 80%;
-        margin: auto;
-    }
-    main {
-      display: grid;
-      grid-template-areas:
-        "card1 card1 card2 card5"
-        "card3 card4 card4 card5";
-    }
+@media (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  main {
+    display: grid;
+    grid-template-areas:
+      "card1 card1 card2 card5"
+      "card3 card4 card4 card5";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 .card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  padding-block: 1rem;
   padding-inline: 3rem;
-  padding-block: 2rem;
   margin: 1rem;
-  gap: 1.5rem;
+  gap: 1rem;
   color: var(--clr-prm-white);
 }
 .card-id {
@@ -62,11 +64,11 @@ body {
   color: var(--clr-prm-white-xl);
 }
 .card-header {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .card-content {
   font-weight: var(--fw-small);
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--clr-prm-white3);
 }
 .card-one {
